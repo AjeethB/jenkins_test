@@ -1,5 +1,9 @@
+github -- your repo -- Jenkinsfile -- edit
+
 pipeline {
-    agent any
+    agent {
+        label 'linux'
+    }
     
     tools {
         maven "MVN3"
