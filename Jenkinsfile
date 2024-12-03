@@ -27,6 +27,6 @@ pipeline {
         stage('print') {
             steps{
                 echo "testing"
-            }
+        }
     }
 }
