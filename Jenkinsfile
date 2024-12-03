@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('pull scm') {
             steps {
-                git credentialsId: 'github', url: 'git@github.com:AjeethB/jenkins_test.git'
+                git credentialsId: 'github', url: 'git@github.com:sathishbob/jenkins_test.git'
             }
         }
         
@@ -24,9 +24,11 @@ pipeline {
                 archiveArtifacts 'api-gateway/target/*.jar'
             }
         }
+
         stage('print') {
-            steps{
+            steps {
                 echo "testing"
+            }
         }
     }
 }
